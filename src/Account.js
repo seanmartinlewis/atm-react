@@ -10,7 +10,7 @@ export default class Account extends Component {
   }
 
   _handleSubmitDeposit(){
-    let newDeposit = this.refs.deposit.value;
+    let newDeposit = parseInt(this.refs.deposit.value, 0);
     let currentBalance = this.state.balance;
     console.log(newDeposit);
 
@@ -21,7 +21,7 @@ export default class Account extends Component {
   }
 
   _handleSubmitWithdrawal(){
-    let newDeposit = this.refs.deposit.value;
+    let newDeposit = parseInt(this.refs.deposit.value, 0);
     let currentBalance = this.state.balance;
     console.log(newDeposit);
 
