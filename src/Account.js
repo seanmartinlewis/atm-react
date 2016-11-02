@@ -24,10 +24,14 @@ export default class Account extends Component {
     let newDeposit = parseInt(this.refs.deposit.value, 0);
     let currentBalance = this.state.balance;
     console.log(newDeposit);
+    if (newDeposit > currentBalance) {
+      alert('dont have the funds')
+    } else {
+      this.setState({
+        balance: currentBalance - newDeposit
+      })
+    }
 
-    this.setState({
-      balance: currentBalance - newDeposit
-    })
     this.refs.deposit.value = '';
   }
 
