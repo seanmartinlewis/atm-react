@@ -3,14 +3,8 @@ import logo from './ga.png';
 
 import Account from './Account';
 
-
 class App extends Component {
-  constructor(){
-    super();
-    this.state = {
-      balance: 0
-    }
-  }
+
   render() {
     return (
       <div id="content">
